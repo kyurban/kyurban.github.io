@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    cursor: default;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1E1E1E;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.title {
+    color: #FF4500; 
+    max-width: 140px;
+    max-height: 120px;
+    margin-left: 150px; 
+    cursor: pointer;
+}
+
+#linkedin {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#github {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#leetcode {
+    width: 30px;
+    height: 30px;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1; 
+    display: flex; 
+    justify-content: center;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding-right: 105px;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+section {
+    background-color: #121212;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 10);
+    padding: 80px 20px;
+    margin-top: 20px;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100vh;
+}
+
+#contacts {
+    height:100vh;
+}
+
+#about {
+    height:100vh
+}
+
+#projects {
+    height:100vh;
+}
+    
+
+.home-div1 {
+    flex: 1;
+    padding-left: 100px;
+}
+
+.home-div1 h1 {
+    font-size: 2.5rem;
+    padding: 8px;
+    color: #E0E0E0;
+}
+
+.highlight {
+    color:#FF4500;
+    font-size: 2.5rem;
+    padding: 8px;
+}
+
+.home-div1 p {
+    padding-top: 30px;
+    color: #B0B0B0;
+}
+
+.home-div2 {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #FF4500;
+}
+
+#myPhoto {
+    width: 380px;
+    height: 450px;
+    border-radius: 25%;
+    object-fit: cover;
+    margin-right: 100px;
+}
+
+

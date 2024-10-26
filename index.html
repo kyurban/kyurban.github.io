@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aboutStyle.css">
+    <link rel="stylesheet" href="css/contactsStyle.css">
+    <link rel="stylesheet" href="css/projectsStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <title>Kyle Urban</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#home"><img class="title" src="img/signature.png"></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <a href="#contacts"><img id="linkedin" src="img/linkedin-logo.png"></a>
+            <a href="#contacts"><img id="github" src="img/github-logo.png"></a>
+            <a href="#contacts"><img id="leetcode" src="img/leetcode-logo.png"></a>
+        </div>
+    </header>    
+
+    <section id="home">
+        <div class="home-div1">
+            <h1>Hi there! I'm <span class="highlight">Kyle</span></h1>
+            <h1>an aspiring Software Engineer</h1>
+            <p>I enjoy collaborating with fellow creatives to tackle tough challenges. I am actively seeking opportunities that foster my growth while allowing me to apply my skills to projects that make a difference.</p>
+        </div>
+        <div class="home-div2">
+            <img id="myPhoto" src="img/me2.jpeg" alt="Kyle">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="topics">
+            <h2>Education</h2>
+            <div class="education">
+                <div class="education-card">
+                    <img src="img/fullerton-logo.png">
+                    <h3>California State University, Fullerton</h3>
+                    <p>Master of Science in Software Engineering</p>
+                    <p>2023 - 2025</p>
+                </div>
+                <div class="education-card">
+                    <img src="img/fullerton-logo.png">
+                    <h3>California State University, Fullerton</h3>
+                    <p>Bachelor of Biological Science </p>
+                    <p>2016 - 2021</p>
+                </div>
+            </div>
+            <h2>Occupation</h2>
+            <div class="occupation">
+                <div class="occupation-card">
+                    <img src="img/cvs-logo.png">
+                    <h3>Certified Pharmacy Technician</h3>
+                    <p>2021 - Present</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="project">
+
+            <div class="project-card">
+                <div class="to-do-list-card">
+                    <h1>To-Do List</h1>
+                    <div class="hover-video" muted>
+                        <video class="video vid-1" muted>
+                            <source src="vid/to-do-list.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p>A simple and intuitive to-do list application built with Java Swing. This desktop app allows users to create, edit, and manage daily tasks efficiently. Users can enter new tasks, mark them as completed, and delete items as needed, all within a clean and user-friendly interface.</p>
+                    <p class="tags">Java, Java Swing, GUI</p>
+                    <a href="https://github.com/kyurban/To-Do-List" class="btn" target="_blank" rel="noopener noreferrer">Github Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="weather-app">
+                    <h1>Weather App</h1>
+                    <div class="hover-video" muted>
+                        <video class="video vid-2" muted>
+                            <source src="vid/weather-app.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <script src="video.js"></script>
+                    <p>A dynamic weather forecast application built with Django that allows users to search for the current weather conditions by city. The app retrieves weather data such as location, date, temperature, conditions, and humidity using the OpenWeatherMap API.</p>
+                    <p class="tags">Django, HTML, CSS, REST API</p>
+                    <a href="https://github.com/kyurban/Weather-App" class="btn" target="_blank" rel="noopener noreferrer">Github Code</a>
+                </div>
+
+            </div>
+        </project>
+    </section>
+
+    <section id="contacts">
+        <div class="contact-cards">
+            <div class="item1">
+                <img src="img/phone-logo.png">
+                <h2>Phone Number</h2>
+                <p>Call or text me @</p>
+                <p>(310)938-1787</p>
+            </div>
+            <div class="item1">
+                <img src="img/email-logo.png">
+                <h2>Email</h2>
+                <p>kyleanthonyurban@gmail.com</p>
+            </div>
+        </div>
+        <div class="social-cards">
+            <a href="https://www.linkedin.com/in/kyurban" target="_blank" class="item2">
+                <img src="img/linkedin-logo.png">
+                <h2>LinkedIn</h2>
+                <p>https://www.linkedin.com/in/kyurban</p>
+            </a>
+            <a href="https://github.com/kyurban" target="_blank" class="item2">
+                <img src="img/github-logo.png">
+                <h2>GitHub</h2>
+                <p>https://github.com/kyurban</p>
+            </a>
+            <a href="https://leetcode.com/u/kyurban" target="_blank" class="item2">
+                <img src="img/leetcode-logo.png">
+                <h2>LeetCode</h2>
+                <p>https://leetcode.com/u/kyurban</p>
+            </a>
+        </div>
+        <footer>© 2024 Kyle Urban. All rights reserved.</footer>
+    </section>
+</body>
+</html>
