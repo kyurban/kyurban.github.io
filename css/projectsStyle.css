@@ -1,38 +1,41 @@
 .project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 40px;
- }
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-top: 40px;
+}
 
 .project-card {
-    text-align: center;
-    background-color:#1E1E1E;
-    width: 500px;
-    height: 765px;
-    padding: 20px;
-    margin: 10px;
-    color: #E0E0E0;
- }
+   text-align: center;
+   background-color: #1E1E1E;
+   width: 90%; 
+   max-width: 500px; 
+   height: auto; 
+   padding: 20px;
+   margin: 10px;
+   color: #E0E0E0;
+   border-radius: 10px; 
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
 
- .project-card h1 {
-    font-size: 1.7rem;
-    padding-bottom: 15px;
- }
+.project-card h1 {
+   font-size: 1.5rem;
+   padding-bottom: 15px;
+}
 
- .project-card p {
-    padding-top: 10px;
-    padding-bottom: 10px;
- }
+.project-card p {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
 
- .video {
-    width: 450px;
-    height: auto;
-    object-fit: cover;
-    border: 2px solid #333;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    z-index: 1;
+.video {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   border: 2px solid #333;
+   border-radius: 10px;
+   transition: transform 0.3s ease;
+   z-index: 1;
 }
 
 .tags {
@@ -48,3 +51,20 @@
 .btn:hover {
    color: #FF7F50;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+   .project-card {
+       width: 100%; 
+       margin: 10px 0; 
+   }
+
+   .project-card h1 {
+       font-size: 1.3rem; 
+   }
+
+   .project-card p {
+       font-size: 0.9rem; 
+   }
+}
+
