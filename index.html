@@ -16,7 +16,12 @@
 <body>
     <header>
         <div class="header-content">
-            <a href="#home"><img class="title" src="img/signature.png"></a>
+            <a href="#home"><img class="title" src="img/signature.png" alt="Kyle Urban's Signature"></a>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -25,12 +30,14 @@
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
-            <a href="#contacts"><img id="linkedin" src="img/linkedin-logo.png"></a>
-            <a href="#contacts"><img id="github" src="img/github-logo.png"></a>
-            <a href="#contacts"><img id="leetcode" src="img/leetcode-logo.png"></a>
+            <div class="social-icons">
+                <a href="#contacts"><img id="linkedin" src="img/linkedin-logo.png" alt="LinkedIn Logo"></a>
+                <a href="#contacts"><img id="github" src="img/github-logo.png" alt="GitHub Logo"></a>
+                <a href="#contacts"><img id="leetcode" src="img/leetcode-logo.png" alt="LeetCode Logo"></a>
+            </div>
         </div>
-    </header>    
-
+    </header>
+    
     <section id="home">
         <div class="home-div1">
             <h1>Hi there! I'm <span class="highlight">Kyle</span></h1>
@@ -41,6 +48,8 @@
             <img id="myPhoto" src="img/me2.jpeg" alt="Kyle">
         </div>
     </section>
+
+    <script src="nav.js"></script>
 
     <section id="about">
         <div class="topics">
