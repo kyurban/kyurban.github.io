@@ -17,7 +17,6 @@ header {
     width: 100%;
     background-color: #1E1E1E;
     padding: 20px 0;
-    position: fixed;
     z-index: 100;
 }
 
@@ -31,29 +30,22 @@ header {
     color: #FF4500; 
     max-width: 140px;
     max-height: 120px;
-    margin-left: 150px; 
+    margin-left: 20px; 
     cursor: pointer;
 }
 
-#linkedin {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
+.navbar-toggle {
+    display: none; 
+    flex-direction: column;
     cursor: pointer;
+    margin-right: 20px; 
 }
 
-#github {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-#leetcode {
-    width: 30px;
-    height: 30px;
-    margin-right: 70px;
-    cursor: pointer;
+.navbar-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #E0E0E0; 
+    margin: 3px 0;
 }
 
 nav {
@@ -65,7 +57,7 @@ nav {
 
 nav ul {
     list-style: none;
-    padding-right: 105px;
+    padding: 0;
     margin: 0;
     display: flex;
 }
@@ -78,8 +70,41 @@ nav ul li a {
     color: #E0E0E0;
     text-decoration: none;
     padding: 10px;
-    padding-right: 10px;
     cursor: pointer;
+}
+
+/* Dropdown Styles */
+nav.show-nav {
+    display: flex; 
+    flex-direction: column; 
+    position: absolute; 
+    background-color: #1E1E1E; 
+    top: 60px; 
+    right: 0; 
+    width: 100%; 
+    z-index: 99; 
+}
+
+nav.show-nav ul {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+}
+
+nav.show-nav ul li {
+    margin: 10px 0; 
+    text-align: center; 
+}
+
+.social-icons {
+    display: flex;
+    margin-right: 20px; 
+}
+
+#linkedin, #github, #leetcode {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px; 
 }
 
 section {
@@ -92,39 +117,27 @@ section {
 
 #home {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height:100vh;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin-top: 20px;
 }
-
-#contacts {
-    height:100vh;
-}
-
-#about {
-    height:100vh
-}
-
-#projects {
-    height:100vh;
-}
-    
 
 .home-div1 {
-    flex: 1;
-    padding-left: 100px;
+    flex: 1; 
+    padding-left: 100px; 
+    text-align: left; 
 }
 
 .home-div1 h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; 
     padding: 8px;
     color: #E0E0E0;
 }
 
 .highlight {
-    color:#FF4500;
-    font-size: 2.5rem;
-    padding: 8px;
+    color: #FF4500;
+    font-size: 2.5rem; 
 }
 
 .home-div1 p {
@@ -139,17 +152,56 @@ section {
     align-items: center;  
 }
 
-nav a:hover {
-    text-decoration: underline;
-    color: #FF4500;
-}
-
 #myPhoto {
     width: 380px;
     height: 450px;
     border-radius: 25%;
     object-fit: cover;
-    margin-right: 100px;
+    margin-right: 100px; 
 }
 
+/* Mobile Styles */
+@media (max-width: 860px) {
+    header .social-icons {
+        display: none; 
+    }
 
+    nav {
+        display: none; 
+    }
+
+    .navbar-toggle {
+        display: flex; 
+    }
+
+    .header-content {
+        justify-content: space-between; 
+    }
+
+
+    #home {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .home-div1 {
+        padding-left: 0; 
+        padding-bottom: 20px; 
+        text-align: center; 
+    }
+
+    #myPhoto {
+        width: 80%; 
+        max-width: 300px; 
+        height: auto; 
+        margin-right: 0; 
+    }
+
+    .home-div1 h1 {
+        font-size: 2rem; 
+    }
+
+    .highlight {
+        font-size: 2rem; 
+    }
+}
