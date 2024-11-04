@@ -11,6 +11,7 @@ html {
     cursor: default;
 }
 
+
 header {
     position: fixed;
     top: 0;
@@ -73,6 +74,10 @@ nav ul li a {
     cursor: pointer;
 }
 
+nav ul li a.active {
+    color: #FF4500;
+}
+
 /* Dropdown Styles */
 nav.show-nav {
     display: flex; 
@@ -81,14 +86,14 @@ nav.show-nav {
     background-color: #1E1E1E; 
     top: 60px; 
     right: 0; 
-    width: 100%; 
+    width: auto;
     z-index: 99; 
 }
 
 nav.show-nav ul {
     display: flex; 
     flex-direction: column; 
-    width: 100%; 
+    width: auto;
 }
 
 nav.show-nav ul li {
@@ -120,7 +125,9 @@ section {
     align-items: center; 
     justify-content: center; 
     height: 100vh; 
+    width: 100vw;
     margin-top: 20px;
+    flex: 1;
 }
 
 .home-div1 {
@@ -182,6 +189,9 @@ section {
     #home {
         flex-direction: column; 
         align-items: center; 
+        width: 100vw;
+        height: 100vh;
+        flex: 1;
     }
 
     .home-div1 {
