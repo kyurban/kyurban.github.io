@@ -32,7 +32,7 @@
 .education-card img {
    width: 55px;
    height: 75px;
-   margin-top: 30px;
+   margin-top: 5px;
    margin-bottom: 10px;
 }
 
@@ -66,4 +66,3 @@
 .occupation-card p {
    padding: 10px;
 }
-
