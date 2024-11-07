@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Select all video elements
     const videos = document.querySelectorAll('.video');
 
     videos.forEach(video => {
-        // Play video when hovered
+        // Play video when hovered (desktop)
         video.addEventListener('mouseenter', () => {
             video.play();
         });
@@ -11,7 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // Pause video and reset when hover ends
         video.addEventListener('mouseleave', () => {
             video.pause();
-            video.currentTime = 0; // Reset the video to the beginning
+            video.currentTime = 0;
+        });
+
+        // Play/Pause video on tap (mobile)
+        video.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+                video.currentTime = 0;
+            }
         });
     });
 });
